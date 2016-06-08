@@ -2,7 +2,7 @@
 /*
 Program for writers developed by Felipe Alfonso Gonzalez
 email: f.alfonso.go@gmail.com
-(CC) All protected under a licence creative commons
+All protected under a GNU/GPL 
 */
 
 if(isset($_POST['SAVE'])){
