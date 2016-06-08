@@ -109,7 +109,7 @@ $rs2 = mysql_query ($sql2,$link1) or die ('<br><b>Error!.</b>');
 				 <h1><?php /* echo date('l \t\h\e jS, Y');*/ echo $date_t2; ?></h1>
 		<div class="1">
 		<textarea class="expand" style=" margin-bottom: 25px; resize:none; scrollHeight: yes;  border: 1px solid #ffffff; outline: none; overflow-x: hidden; overflow-y: hidden;" onKeyUp="wordcounter(this);"  onFocus="wordcounter(this); " rows="70" cols="150" style="width:300px; height:10px" wrap="virtual" name="qs" id="qs"><?php  if (empty($data2)) { echo"Write here ..."; } else {  ?><?php echo $data2; ?><?php  } ?></textarea>
-		<input type="hidden" name="id2" id="id2" value="<? echo $id2; ?>">
+		<input type="hidden" name="id2" id="id2" value="<?php echo $id2; ?>">
 </div><div class="2">
 		<!-- <input type="submit" id="button" value="SAVE" /> --> <div class="font">( CTRL + S ) on your keyboard to save the words.</div>
 		<p><b><span id="counted"></span></b> <div class="font">Last update: <?php echo $last_update; ?><div class="success" style="display: none;" class="font">Data has been added.</div></div>
