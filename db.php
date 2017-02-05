@@ -2,8 +2,7 @@
 /*
 MySQL-DB: felipe
 Login: felipe
-Pass: fldbpw486
-new: KWMEEGvaIpiyIrsd
+
 */
 
 /* -------------- local host -----------------
