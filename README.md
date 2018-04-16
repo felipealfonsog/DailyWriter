@@ -6,7 +6,7 @@ Basically and simply, this is an app, made up with PHP, xHtml and using Jquery, 
 
 | testing site: https://freeshell.de/~felipe/dev/750writer/
 
-This software is OpenSource is mantained by Software Engineer - Felipe Alfonso González
+This software is OpenSource is manteined by Software Engineer - Felipe Alfonso González
 
 | Questions?
 
