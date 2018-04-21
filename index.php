@@ -9,7 +9,16 @@ if(isset($_POST['SAVE'])){
     die('SAVE= ' . $_POST['SAVE']);
 }
 
-include('db.php');
+include('./config/db.php');
+
+// include('./config/ajax.php');
+// include('./config/delpage.php');
+// include('./config/load.php');
+// include('./config/newpage.php');
+// include('./config/save_get.php');
+// include('./config/save.php');
+
+
 // $qs_res=$_POST['qs'];
 // $df=$_GET['id'];
 
@@ -22,12 +31,12 @@ $rs1 = mysql_query ($sql1,$link1) or die ('<br><b>Error!.</b>');
 <head>
 
 <title>Word Counter & Toolkit Platform for daily writers</title>
-<script src="jquery-1.7.2.min.js" type="text/javascript"></script>
-<script type="text/javascript" src="jquery.textarea-expander.js"></script>
-<script type="text/javascript" src="js2.js"></script>
-<script type="text/javascript" src="app-jquery.js"></script>
-<link rel="stylesheet" href="style2.css" type="text/css" charset="utf-8" />
-<link rel="stylesheet" href="stylesheet.css" type="text/css" charset="utf-8" />
+<script src="./js/jquery-1.7.2.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="./js/jquery.textarea-expander.js"></script>
+<script type="text/javascript" src="./js/js_countw.js"></script>
+<script type="text/javascript" src="./js/main-app-ajax.js"></script>
+<link rel="stylesheet" href="./css/style2.css" type="text/css" charset="utf-8" />
+<link rel="stylesheet" href="./css/stylesheet.css" type="text/css" charset="utf-8" />
 <link href='favicon.gif' rel='shortcut icon' />
 
 
@@ -45,11 +54,11 @@ exit;
 ?>
   <div class="control" id="control">
 
-<img src="writer.jpg" alt="Writer - Beta" height="auto" width="auto" /><br>
+<img src="./images/writer.jpg" alt="Writer - Beta" height="auto" width="auto" /><br>
       
 <div class="font"><a href="index.php">HOME</a></div><br>
       
-<form method="POST" action="load.php"><select name="id">
+<form method="POST" action="./app/load.php"><select name="id">
 <option value="">Select date</option>
 <?php while ($row = mysql_fetch_array ($rs1)) {
         $id            = $row[0] ;
@@ -68,7 +77,7 @@ exit;
 		 if (empty($_GET['id'])) {
 	 echo "You must select a date or add a new page.";
 	 ?>
-	 <form method="POST" action="newpage.php">
+	 <form method="POST" action="./app/newpage.php">
 	 <input type="hidden" name="id55" id="id55" value="<?php 
 	 $sql1="SELECT * FROM `reg_750` order by id desc";
 #ejecuto la query
@@ -80,7 +89,7 @@ $rs1 = mysql_query ($sql1,$link1) or die ('<br><b>Error!.</b>');
 	 echo $id55; ?>"> 
 	<input type="submit" id="button"  value="NEW PAGE" />
 	</form>
-	 <form method="POST" action="delpage.php">
+	 <form method="POST" action="./app/delpage.php">
 	 <input type="hidden" name="id56" id="id56" value="<?php echo $id56; ?>">
 	<input type="submit" id="button"  value="DELETE PAGE" />
 </form>
@@ -92,7 +101,7 @@ $rs1 = mysql_query ($sql1,$link1) or die ('<br><b>Error!.</b>');
 </PRE>
 <?php 
 	} else {
-	?><br><form method="POST" idd="submit" action="save.php"><?php 
+	?><br><form method="POST" idd="submit" action="./app/save.php"><?php 
  
 		 $r = $_GET["id"];
 		 $sql2="SELECT * FROM `reg_750` where id='".$r."'";
