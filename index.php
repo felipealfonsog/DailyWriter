@@ -35,7 +35,7 @@ $rs1 = mysql_query ($sql1,$link1) or die ('<br><b>Error!.</b>');
 <script type="text/javascript" src="./js/jquery.textarea-expander.js"></script>
 <script type="text/javascript" src="./js/js_countw.js"></script>
 <script type="text/javascript" src="./js/main-app-ajax.js"></script>
-<link rel="stylesheet" href="./css/style2.css" type="text/css" charset="utf-8" />
+<link rel="stylesheet" href="./css/main-style.css" type="text/css" charset="utf-8" />
 <link rel="stylesheet" href="./css/stylesheet.css" type="text/css" charset="utf-8" />
 <link href='favicon.gif' rel='shortcut icon' />
 
