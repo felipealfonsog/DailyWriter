@@ -22,7 +22,7 @@ $rs2 = mysql_query ($sql2,$link2) or die ("<br><b>Error!. ".$sql2."</b>");
 
 // echo $sql2;
  // echo " <a href=\"javascript:history.go(-1);\">back</a> ";
-header("Location: ./index.php?id=".$f.""); /* Redirect browser */
+header("Location: ../?id=".$f.""); /* Redirect browser */
 
 /* Make sure that code below does not get executed when we redirect. */
  exit;

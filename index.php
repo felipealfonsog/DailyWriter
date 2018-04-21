@@ -56,9 +56,9 @@ exit;
 
 <img src="./images/writer.jpg" alt="Writer - Beta" height="auto" width="auto" /><br>
       
-<div class="font"><a href="index.php">HOME</a></div><br>
+<div class="font"><a href="./">HOME</a></div><br>
       
-<form method="POST" action="./app/load.php"><select name="id">
+<form method="POST" action="app/load.php"><select name="id">
 <option value="">Select date</option>
 <?php while ($row = mysql_fetch_array ($rs1)) {
         $id            = $row[0] ;

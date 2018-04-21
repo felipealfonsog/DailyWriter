@@ -25,6 +25,14 @@ echo $_POST["id56"];
 		// } else {
 //date_default_timezone_set("America/Santiago");
 //$fecha = localtime(); 
+
+if (empty($_POST['id56'])) {
+	echo "You must select a work.";
+	echo " <a href=\"javascript:history.go(-1);\">back</a> ";
+ } elseif ($_POST['id56']== true) {
+
+
+
 $id_del = $_POST["id56"];
 $fecha = date('l j \of F Y h:i:s A');
 $fecha_t = date('l F \t\h\e jS, Y');
@@ -34,9 +42,10 @@ $fecha_t = date('l F \t\h\e jS, Y');
 $sql2="DELETE FROM reg_750 WHERE `id` = ".$id_del." order by id desc;";
 
 $rs2 = mysql_query ($sql2,$link2) or die ("<br><b>Error!. ".$sql2."</b>");
+ }
 
  // echo " <a href=\"javascript:history.go(-1);\">back</a> ";
- header("Location: ././index.php"); /* Redirect browser */
+ header("Location: ../"); /* Redirect browser */
 
 /* Make sure that code below does not get executed when we redirect. */
  exit;
