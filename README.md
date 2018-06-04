@@ -10,4 +10,4 @@ This software is OpenSource is maintained by Software Engineer - Felipe Alfonso 
 
 | Questions?
 
- Email me: felipe.dev.engr.js@gmail.com
+ Email me: f.alfonso@res-ear.ch
