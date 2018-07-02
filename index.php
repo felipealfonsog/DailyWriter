@@ -1,9 +1,16 @@
-<?php 
+<pre>
+v5.x.x.x
+</pre>
+
+<?
+
 /*
 Program for writers developed by Felipe Alfonso Gonzalez
 email: f.alfonso.go@gmail.com
 All protected under a GNU/GPL 
 */
+
+
 
 if(isset($_POST['SAVE'])){
     die('SAVE= ' . $_POST['SAVE']);
@@ -25,8 +32,12 @@ include('./config/db.php');
 //$sql1="select * from data where note like '%$qs%'  or note like '%$qs%+%$qs%' or pre_note like '%$qs%' or pre_note like '%$qs%+%$qs%'";
 $sql1="SELECT * FROM `reg_750`";
 #ejecuto la query
+echo $sql1;
+
 $rs1 = mysql_query ($sql1,$link1) or die ('<br><b>Error!.</b>');
-?>
+
+ 
+ ?>
 <html>
 <head>
 
@@ -43,14 +54,20 @@ $rs1 = mysql_query ($sql1,$link1) or die ('<br><b>Error!.</b>');
 </head>
 <body>
 <left>
+<pre>
+v.5.2.1
+
+
+
+</pre>
 <?php 
-    
-if (($_SERVER['PHP_AUTH_USER'] != 'admin') || ($_SERVER['PHP_AUTH_PW'] != 'admin')) {
-header('WWW-Authenticate: Basic Realm=”Admin Access”');
-header('HTTP/1.0 401 Unauthorized');
-print('You must provide the proper credentials!');
-exit;
-}
+
+// if (($_SERVER['PHP_AUTH_USER'] != 'admin') || ($_SERVER['PHP_AUTH_PW'] != 'admin')) {
+// header('WWW-Authenticate: Basic Realm=”Admin Access”');
+// header('HTTP/1.0 401 Unauthorized');
+// print('You must provide the proper credentials!');
+// exit;
+// }
 ?>
   <div class="control" id="control">
 
@@ -79,7 +96,7 @@ exit;
 	 ?>
 	 <form method="POST" action="./app/newpage.php">
 	 <input type="hidden" name="id55" id="id55" value="<?php 
-	 $sql1="SELECT * FROM `reg_750` order by id desc";
+	 $sql1="SELECT * FROM `DailyWriterApp.reg_750` order by id desc";
 #ejecuto la query
 $rs1 = mysql_query ($sql1,$link1) or die ('<br><b>Error!.</b>');
 
@@ -104,7 +121,7 @@ $rs1 = mysql_query ($sql1,$link1) or die ('<br><b>Error!.</b>');
 	?><br><form method="POST" idd="submit" action="./app/save.php"><?php 
  
 		 $r = $_GET["id"];
-		 $sql2="SELECT * FROM `reg_750` where id='".$r."'";
+		 $sql2="SELECT * FROM `DailyWriterApp.reg_750` where id='".$r."'";
 #ejecuto la query
 $rs2 = mysql_query ($sql2,$link1) or die ('<br><b>Error!.</b>');
 //  echo $sql2;
@@ -114,6 +131,9 @@ $rs2 = mysql_query ($sql2,$link1) or die ('<br><b>Error!.</b>');
 		$info2          = $row2[2] ;
 		$last_update    = $row2["date"] ;
 		$date_t2          = $row2["date_title"] ;
+
+
+		echo $rs2; 
 		 ?>
 				 <h1><?php /* echo date('l \t\h\e jS, Y');*/ echo $date_t2; ?></h1>
 		<div class="1">
@@ -129,7 +149,9 @@ $rs2 = mysql_query ($sql2,$link1) or die ('<br><b>Error!.</b>');
 
 <?php 
              
- } ?>
+ } 
+ 
+ ?>
 
 
 </left>

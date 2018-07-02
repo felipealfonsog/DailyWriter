@@ -1,4 +1,5 @@
 <?php 
+
 /*
 MySQL-DB: felipe
 Login: felipe
@@ -20,19 +21,19 @@ mysql_select_db ("750") ;
 */
 // ---------------- NNP ------------------------
 
-$link1 = mysql_connect ("localhost", "root", "")
+$link1 = mysql_connect ("localhost", "adminroot", "fafarafa")
         or die ("No se puede conectar a MySQL ");
 
-mysql_select_db ("750") ;
+mysql_select_db ("DailyWriterApp") ;
 
 
 
 //
 
-$link2 = mysql_connect ("localhost", "root", "")
+$link2 = mysql_connect ("localhost", "adminroot", "fafarafa")
         or die ("No se puede conectar a MySQL ");
 
-mysql_select_db ("750") ;
+mysql_select_db ("DailyWriterApp") ;
 
 
 

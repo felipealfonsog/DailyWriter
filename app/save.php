@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 if (empty($_POST['qs']) OR empty($_POST['id2'])) {
 	echo "You must select a work.";
