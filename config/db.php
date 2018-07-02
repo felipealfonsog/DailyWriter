@@ -24,7 +24,7 @@ mysql_select_db ("750") ;
 $link1 = mysql_connect ("localhost", "adminroot", "")
         or die ("No se puede conectar a MySQL ");
 
-mysql_select_db ("DailyWriterApp") ;
+mysql_select_db("DailyWriterApp");
 
 
 
@@ -33,7 +33,7 @@ mysql_select_db ("DailyWriterApp") ;
 $link2 = mysql_connect ("localhost", "adminroot", "")
         or die ("No se puede conectar a MySQL ");
 
-mysql_select_db ("DailyWriterApp") ;
+mysql_select_db("DailyWriterApp");
 
 
 

@@ -1,14 +1,10 @@
 <pre>
-v5.x.x.x
+v.5.2.1
 </pre>
 
-<?
+<?php
 
-/*
-Program for writers developed by Felipe Alfonso Gonzalez
-email: f.alfonso.go@gmail.com
-All protected under a GNU/GPL 
-*/
+
 
 
 
@@ -36,7 +32,7 @@ echo $sql1;
 
 $rs1 = mysql_query ($sql1,$link1) or die ('<br><b>Error!.</b>');
 
- 
+
  ?>
 <html>
 <head>
@@ -55,7 +51,7 @@ $rs1 = mysql_query ($sql1,$link1) or die ('<br><b>Error!.</b>');
 <body>
 <left>
 <pre>
-v.5.2.1
+
 
 
 
