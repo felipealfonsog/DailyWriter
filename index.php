@@ -144,7 +144,8 @@ $rs2 = mysql_query ($sql2,$link1) or die ('<br><b>Error!.</b>');
 		<p><b><span id="counted"></span></b> <div class="font">Last update: <?php echo $last_update; ?><div class="success" style="display: none;" class="font">Data has been added.</div></div>
 				</form></div></div>
 
-		<?php  }
+		<?php  
+		}
 		?>
 
 <?php 
