@@ -1,4 +1,4 @@
-DailyWriterApp
+A PHP Browser-Desktop/App to perform a word counter while you type and store the words you might want to write. It's somehow a Toolkit Platform for daily writers.
 
 Basically and simply, this is an app, made up with PHP, xHtml and using Jquery, to perform a word counter while you type, it uses MySQL as relational DB to store the words you might want to write in a daily baises if that's your case, It's somehow a Toolkit Platform for daily writers.
 
